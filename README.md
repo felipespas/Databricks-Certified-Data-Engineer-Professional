@@ -10,6 +10,16 @@ This repository contains the resources of the preparation course for Databricks 
 <br/>
 
 
+## Development environment
+
+See [AGENTS.md](./AGENTS.md) for authentication checks and safety requirements.
+Workspace and sign-in account details belong in the repository-root
+`AGENTS.local.md` file, which is ignored by Git and must be configured locally.
+Agents should read both files before working with the workspace.
+
+Terraform for a new VNet-injected Azure Databricks development workspace is
+available in [iac](./iac/README.md).
+
 ## Practice Exams
 
 <img align="left" role="left" src="https://img-c.udemycdn.com/course/240x135/5317104_98d4.jpg" width="180" alt="Practice Exams: Databricks Data Engineer Professional" />

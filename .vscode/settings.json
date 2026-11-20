@@ -1,0 +1,9 @@
+{
+    "jupyter.interactiveWindow.cellMarker.codeRegex": "^# COMMAND ----------|^# Databricks notebook source|^(#\\s*%%|#\\s*\\<codecell\\>|#\\s*In\\[\\d*?\\]|#\\s*In\\[ \\])",
+    "jupyter.interactiveWindow.cellMarker.default": "# COMMAND ----------",
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "text": "Write a simple, concise commit message that captures the main purpose of the changes. Use a single short subject line. Do not enumerate every change, modified file, test, or implementation detail."
+        }
+    ]
+}

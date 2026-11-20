@@ -1,0 +1,33 @@
+subscription_id             = "<approved-subscription-id>"
+location                    = "westus"
+workspace_name              = "databricks-dev"
+resource_group_name         = "azure-databricks-dev"
+managed_resource_group_name = "azure-databricks-dev-managed"
+virtual_network_name        = "databricks-dev-vnet"
+sku                         = "premium"
+
+virtual_network_address_space = "10.42.0.0/16"
+subnet_address_prefixes = {
+  public  = "10.42.1.0/24"
+  private = "10.42.2.0/24"
+}
+
+nat_idle_timeout_in_minutes = 10
+
+public_ip_tags = {
+  FirstPartyUsage = "/Unprivileged"
+}
+
+storage_account_name_prefix            = "stdatabricksdev"
+storage_container_name                 = "data"
+storage_replication_type               = "LRS"
+storage_private_endpoint_subnet_prefix = "10.42.3.0/24"
+storage_perimeter_allowed_cidrs        = ["0.0.0.0/0"]
+storage_data_access_principal_ids      = []
+
+tags = {
+  environment  = "dev"
+  workload     = "databricks"
+  "managed-by" = "terraform"
+}
+

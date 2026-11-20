@@ -12,6 +12,21 @@
 # COMMAND ----------
 
 # MAGIC %sql
+# MAGIC SELECT * FROM bronze
+# MAGIC WHERE topic = 'orders'
+# MAGIC LIMIT 10
+# MAGIC
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC SELECT COUNT(*) FROM bronze
+# MAGIC WHERE topic = 'orders'
+# MAGIC
+
+# COMMAND ----------
+
+# MAGIC %sql
 # MAGIC SELECT cast(key AS STRING), cast(value AS STRING)
 # MAGIC FROM bronze
 # MAGIC LIMIT 20
@@ -86,4 +101,10 @@ query.awaitTermination()
 
 # MAGIC %sql
 # MAGIC SELECT *
+# MAGIC FROM orders_silver
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC SELECT count(*)
 # MAGIC FROM orders_silver
